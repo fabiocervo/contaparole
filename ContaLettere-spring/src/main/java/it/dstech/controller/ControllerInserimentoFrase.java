@@ -13,7 +13,7 @@ public class ControllerInserimentoFrase {
 	public ModelAndView inserisci(@RequestParam("frase") String frase, Model model) {
 		ModelAndView nuovaJsp = new ModelAndView();
 		nuovaJsp.setViewName("scegliOperazione");
-		nuovaJsp.addObject("frase", frase.length());
+		nuovaJsp.addObject("frase", frase);
 		return nuovaJsp;
 	}
 
